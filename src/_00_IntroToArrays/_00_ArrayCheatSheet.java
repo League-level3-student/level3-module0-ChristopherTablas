@@ -21,9 +21,9 @@ public class _00_ArrayCheatSheet {
 		}
 		// 6. use a for loop to print all the values in the array
 		// BE SURE TO USE THE ARRAY'S length VARIABLE
-		for (int i = 0; i < yes.length; i++) {
-			System.out.println(yes[i]);
-		}
+		//for (int i = 0; i < yes.length; i++) {
+			//System.out.println(yes[i]);
+		//}
 		// 7. make an array of 50 integers
 		int[] fifty = new int[50];
 
@@ -37,12 +37,11 @@ public class _00_ArrayCheatSheet {
 		// 9. without printing the entire array, print only the smallest number
 		// on the array
 		for (int i = 0; i < fifty.length; i++) {
-			System.out.println(fifty[i]);
 			if (smoll > fifty[i]) {
-				smoll = fifty[i];
+			smoll = fifty[i];
+
 
 			}
-
 		}
 		System.out.println(smoll);
 
@@ -50,9 +49,16 @@ public class _00_ArrayCheatSheet {
 		// for(int i = 0; i < fifty.length; i++){
 		// System.out.println(fifty[i]);
 		// }
+		int biiig = fifty[0];
 		// 11. print the largest number in the array.
+		for(int i = 0; i<fifty.length; i++){
+			if(biiig< fifty[i]){
+				biiig = fifty[i];
+			}
 
+		}
+		System.out.println(biiig);
 		// 12. print only the last element in the array
-
+		System.out.println(fifty[49]);
 	}
 }
